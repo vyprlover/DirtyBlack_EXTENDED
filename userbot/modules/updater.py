@@ -193,7 +193,7 @@ async def upstream(event):
         await event.edit(
             '`Force-Syncing to latest stable userbot code, please wait...`')
     else:
-        await event.edit('`Updating One4uBot, please wait....`')
+        await event.edit('`Updating DirtyBlack EXTENDED, please wait....`')
     if conf == "now":
         await update(event, repo, ups_rem, ac_br)
     elif conf == "deploy":
