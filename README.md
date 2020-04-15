@@ -16,7 +16,7 @@
 <p align="center">&nbsp;</p>
 <h2 align="center">Updates and Support</h2>
 <p align="center">Join our <a href="https://t.me/PaperplaneExtended_news">Telegram Channel</a> for update notifications!</p>
-<p align="center">Also join our <a href="https://t.me/joinchat/LaUTKFNxyEk7cC_pnvQckQ">Userbotindo Support Group</a> for help and support!</p>
+<p align="center">Also join our <a href="https://t.me/joinchat/LaUTKFNxyEk7cC_pnvQckQ">DirtyBlack EXTENDED Support Group</a> for help and support!</p>
 <p align="center">&nbsp;</p>
 <h2 align="center">License</h2>
 <p align="center"><a href="https://github.com/MoveAngel/One4uBot/blob/sql-extended/LICENSE">Raphielscape Public License</a> - Version 1.d, February 2020</p>
