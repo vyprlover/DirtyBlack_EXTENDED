@@ -6,7 +6,7 @@ from userbot.events import register
 
 TEMPAT = ''
 
-@register(pattern="^.adzan(?: |$)(.*)")
+@register(pattern="^.azan(?: |$)(.*)")
 async def get_adzan(adzan):
     if not adzan.text.startswith("."):
         return ""
@@ -42,16 +42,16 @@ async def get_adzan(adzan):
 
     textkirim = (f"⏱  **Jadwal Sholat Pada ** `{tanggal}` : \n" +
                  f"`{lokasi} | {lokasi2} | {lokasi3} | {lokasi4}`\n\n" +
-                 f"**Subuh : ** `{subuh}`\n" +
-                 f"**Syuruk : ** `{syuruk}`\n" +
-                 f"**Zuhur : ** `{zuhur}`\n" +
-                 f"**Ashar : ** `{ashar}`\n" +
+                 f"**tahajjud : ** `{subuh}`\n" +
+                 f"**fajar : ** `{syuruk}`\n" +
+                 f"**Zuhr : ** `{zuhur}`\n" +
+                 f"**Asar : ** `{ashar}`\n" +
                  f"**Maghrib : ** `{maghrib}`\n" +
-                 f"**Isya : ** `{isya}`\n")
+                 f"**Isha : ** `{isya}`\n")
 
     await adzan.edit(textkirim)
 
 CMD_HELP.update({
-        "adzan": ".adzan <city> or .adzan <country>\
+        "azan": ".azan <city> or .azan <country>\
         \nUsage: Gets the prayer time for muslim.\n"
     })
