@@ -447,7 +447,7 @@ async def translateme(trans):
         )
 
 
-@register(pattern=".lang (trt|tts) (.*)", outgoing=True)
+@register(pattern=".lang (tr|tts) (.*)", outgoing=True)
 async def lang(value):
     """ For .lang command, change the default langauge of userbot scrapers. """
     util = value.pattern_match.group(1).lower()
@@ -719,7 +719,7 @@ CMD_HELP.update({
 CMD_HELP.update({
     'tr':
     '.tr <text> [or reply]\
-        \nUsage: Translates text to the language which is set.\nUse .lang trt <language code> to set language for trt. (Default is English)'
+        \nUsage: Translates text to the language which is set.\nUse .lang tr <language code> to set language for trt. (Default is English)'
 })
 CMD_HELP.update({'yt': '.yt <text>\
         \nUsage: Does a YouTube search.'})
