@@ -40,7 +40,7 @@ async def get_adzan(adzan):
     maghrib = result["items"][0]["maghrib"]
     isya = result["items"][0]["isha"]
 
-    textkirim = (f"⏱  **Jadwal Sholat Pada ** `{tanggal}` : \n" +
+    textkirim = (f"⏱  ** Azan Timing ** `{tanggal}` : \n" +
                  f"`{lokasi} | {lokasi2} | {lokasi3} | {lokasi4}`\n\n" +
                  f"**tahajjud : ** `{subuh}`\n" +
                  f"**fajar : ** `{syuruk}`\n" +
