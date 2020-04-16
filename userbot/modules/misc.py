@@ -87,8 +87,8 @@ async def bot_community(community):
 async def bot_support(wannahelp):
     """ For .support command, just returns the group link. """
     await wannahelp.edit(
-        "
-Join the Community Userbot Chat: @DirtyBlack_EXTENDED")
+
+"Join the Community Userbot Chat: @DirtyBlack_EXTENDED")
 
 @register(outgoing=True, pattern="^.contributor$")
 async def contributor(e):
