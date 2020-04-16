@@ -76,11 +76,10 @@ async def killdabot(event):
 
 @register(outgoing=True, pattern="^.community$")
 async def bot_community(community):
-    """ For .community command, just returns OG Paperplane's group link. """
+    """ For .community command, just returns DirtyBlack EXTENDED group link. """
     await community.edit(
-        "Join RaphielGang's awesome userbot community: @userbot_support"
-        "\nDo note that Paperplane Extended is an unoficial fork of their "
-        "Paperplane project and it may get limited or no support for bugs.")
+        "Join DirtyBlack EXTENDED awesome userbot community: @DirtyBlack_EXTENDED"
+        "DirtyBlack EXTENDED and it may get limited or no support for bugs.")
 
 
 @register(outgoing=True, pattern="^.support$")
@@ -91,24 +90,18 @@ async def bot_support(wannahelp):
 
 @register(outgoing=True, pattern="^.contributor$")
 async def contributor(e):
-    await e.edit("[MoveAngel](https://t.me/MoveAngel)")
+    await e.edit("[jamie](https://t.me/henloboi)")
 
 @register(outgoing=True, pattern="^.creator$")
 async def creator(e):
-    await e.edit("[TeKnoways](https://t.me/Three_Cube_TeKnoways)")
+    await e.edit("[ElytrA8](https://t.me/ElytrA8)")
 
 
 @register(outgoing=True, pattern="^.readme$")
 async def reedme(e):
     await e.edit(
         "Here's something for you to read:\n"
-        "\n[One4uBot's README.md file](https://github.com/MoveAngel/One4uBot/blob/sql-extended/README.md)"
-        "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
-        "\n[Setup Guide - Google Drive](https://telegra.ph/How-To-Setup-Google-Drive-04-03)"
-        "\n[Setup Guide - LastFM Module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)"
-        "\n[Video Tutorial - 576p](https://mega.nz/#!ErwCESbJ!1ZvYAKdTEfb6y1FnqqiLhHH9vZg4UB2QZNYL9fbQ9vs)"
-        "\n[Video Tutorial - 1080p](https://mega.nz/#!x3JVhYwR!u7Uj0nvD8_CyyARrdKrFqlZEBFTnSVEiqts36HBMr-o)"
-        "\n[Special - Note](https://telegra.ph/Special-Note-11-02)")
+        "\n read at https://github.com/ElytrA8/DirtyBlack_EXTENDED/readme.md")
     
 
 # Copyright (c) Gegham Zakaryan | 2019
