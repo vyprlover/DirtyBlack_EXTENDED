@@ -104,7 +104,7 @@ execute. Use .help exec for an example.```")
         + str(stderr.decode().strip())
 
     if result:
-        if len(result) > 1:
+        if len(result) > 10:
             file = open("output.txt", "w+")
             file.write(result)
             file.close()
