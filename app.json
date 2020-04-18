@@ -129,7 +129,7 @@
     },
     "USER_TERM_ALIAS": {
       "description": "Set alias name of user for term bash command",
-      "required": false
+      "value": "dirty"
     },
     "QUOTES_API_TOKEN": {
       "description": "Enhance ur text to sticker. Get your own API token from http://antiddos.systems.",
