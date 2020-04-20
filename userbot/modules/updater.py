@@ -104,12 +104,12 @@ async def update(event, repo, ups_rem, ac_br):
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
     await event.edit('`Successfully Updated!\n'
-                     'Bot is restarting... Wait for a second!`')
+                     'Bot is restarted... Wait for some seconds to get it alive!`')
 
     if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#UPDATE \n"
-                "Your One4uBot was successfully updated")
+                "Your Dirtyblack was successfully updated")
 
     # Spin a new instance of bot
     args = [sys.executable, "-m", "userbot"]
