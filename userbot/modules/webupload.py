@@ -6,7 +6,7 @@ import io
 import asyncio
 import time
 from userbot import CMD_HELP
-
+from userbot.events import register
 
 @register(pattern="^.webupload ?(.+?|) (?:--)(anonfiles|transfer|filebin|anonymousfiles|megaupload|bayfiles)")
 async def _(event):
