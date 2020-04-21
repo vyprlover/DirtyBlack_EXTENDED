@@ -415,7 +415,7 @@ async def imdb(e):
         await e.edit("Plox enter **Valid movie name** kthx")
 
 
-@register(outgoing=True, pattern=r"^.tr(?: |$)([\s\S]*)")
+@register(outgoing=True, pattern=r"^.trt(?: |$)([\s\S]*)")
 async def translateme(trans):
     """ For .tr command, translate the given text using Google Translate. """
     translator = Translator()
@@ -447,7 +447,7 @@ async def translateme(trans):
         )
 
 
-@register(pattern=".lang (tr|tts) (.*)", outgoing=True)
+@register(pattern=".lang (trt|tts) (.*)", outgoing=True)
 async def lang(value):
     """ For .lang command, change the default langauge of userbot scrapers. """
     util = value.pattern_match.group(1).lower()
