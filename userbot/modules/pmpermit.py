@@ -18,7 +18,6 @@ from userbot.events import register
 # ========================= CONSTANTS ============================
 UNAPPROVED_MSG = (
     "`Alexa : Hey , there You don't have permission to talk to my Master?`\n"
-
     "`Wait for him to look up on you. He usually don't approve retards though`")
 # =================================================================
 
