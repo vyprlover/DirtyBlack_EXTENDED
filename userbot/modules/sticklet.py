@@ -74,6 +74,6 @@ async def get_font_file(client, channel_id):
     return await client.download_media(font_file_message)
 CMD_HELP.update({
 "sticklet":
-"makes text to sticker./"
-"/n uses:- .srgb (text)"
+"makes text to sticker./
+/nUse:- .srgb (text)"
 })
