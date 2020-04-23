@@ -6,7 +6,7 @@ import asyncio
 from collections import deque
 
 
-@register(events.NewMessage(pattern=r"\.earth", outgoing=True))
+@register(events.NewMessage(outgoing=True,pattern=r^\.earth"))
 async def _(event):
 	if event.fwd_from:
 		return
