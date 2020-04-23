@@ -107,7 +107,7 @@ async def update(event, repo, ups_rem, ac_br):
     if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#UPDATE \n"
-                "Your Dirtyblack was successfully updated")
+                "[ALEXA]:\n Your Dirtyblack was successfully updated")
 
     # Spin a new instance of bot
     args = [sys.executable, "-m", "userbot"]
