@@ -4,7 +4,7 @@ from userbot.events import register
 from telethon import events
 import asyncio
 from collections import deque
-@register(outgoing=True,pattern="^.weather(?: |$)(.*)")
+@register(outgoing=True,pattern="^.earth(?: |$)(.*)")
 async def _(event):
 	if event.fwd_from:
 		return
