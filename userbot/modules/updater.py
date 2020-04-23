@@ -2,8 +2,6 @@
 #
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
 # you may not use this file except in compliance with the License.
-# credits to @AvinashReddy3108
-#
 """
 This module updates the userbot based on upstream revision
 """
@@ -82,13 +80,13 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         except GitCommandError as error:
             await event.edit(f'{txt}\n`Here is the error log:\n{error}`')
             return repo.__del__()
-        await event.edit('`Successfully Updated!\n'
+        await event.edit('`[ALEXA]:\n Successfully Updated Userbot!\n'
                          'Restarting, please wait...`')
 
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#UPDATE \n"
-                "Your DirtyBlack EXTENDED was successfully updated")
+                "[ALEXA]:\nYour DirtyBlack EXTENDED was successfully updated")
 
     else:
         await event.edit('`[HEROKU]:'
@@ -103,7 +101,7 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    await event.edit('`Successfully Updated!\n'
+    await event.edit('`[ALEXA]:\n Successfully Updated!\n'
                      'Bot is restarted... Wait for some seconds to get it alive!`')
 
     if BOTLOG:
@@ -120,7 +118,7 @@ async def update(event, repo, ups_rem, ac_br):
 @register(outgoing=True, pattern=r"^.update(?: |$)(now|deploy)?")
 async def upstream(event):
     "For .update command, check if the bot is up to date, update if specified"
-    await event.edit("`Checking for updates, please wait....`")
+    await event.edit("`[ALEXA]:\nChecking for updates, please wait....`")
     conf = event.pattern_match.group(1)
     off_repo = UPSTREAM_REPO_URL
     force_update = False
@@ -169,7 +167,7 @@ async def upstream(event):
 
     if changelog == '' and force_update is False:
         await event.edit(
-            f'\n`Your USERBOT is`  **up-to-date**  `with`  **{UPSTREAM_REPO_BRANCH}**\n')
+            f'\n`[ALEXA]:\n Your DirtyBlack_EXTENDED is`  **up-to-date**  `with`  **{UPSTREAM_REPO_BRANCH}**\n')
         return repo.__del__()
 
     if conf is None and force_update is False:
@@ -193,7 +191,7 @@ async def upstream(event):
         await event.edit(
             '`Force-Syncing to latest stable userbot code, please wait...`')
     else:
-        await event.edit('`Updating DirtyBlack EXTENDED, please wait....`')
+        await event.edit('`[ALEXA]:\nUpdating DirtyBlack EXTENDED, please wait....`')
     if conf == "now":
         await update(event, repo, ups_rem, ac_br)
     elif conf == "deploy":
