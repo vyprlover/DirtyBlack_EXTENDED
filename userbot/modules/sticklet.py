@@ -75,5 +75,5 @@ async def get_font_file(client, channel_id):
 CMD_HELP.update({
 "sticklet":
 "makes text to sticker./"
-"/n uses:- .srgb (text)
+"/n uses:- .srgb (text)"
 })
