@@ -63,7 +63,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 f'{txt}\n`Invalid Heroku credentials for deploying userbot dyno.`'
             )
             return repo.__del__()
-        await event.edit('`[HEROKU]:'
+        await event.edit('`[ALEXA]:'
                          '\nUserbot dyno build in progress, please wait...`'
                          )
         ups_rem.fetch(ac_br)
@@ -89,7 +89,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 "[ALEXA]:\nYour DirtyBlack EXTENDED was successfully updated")
 
     else:
-        await event.edit('`[HEROKU]:'
+        await event.edit('`[ALEXA]:'
                          '\nPlease set up` **HEROKU_API_KEY** `variable.`'
                          )
     return
