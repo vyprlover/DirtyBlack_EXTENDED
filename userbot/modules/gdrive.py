@@ -3,7 +3,7 @@
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
 # you may not use this file except in compliance with the License.
 #
-# Many improve from adekmaulana
+
 
 """
     Google Drive manager for Userbot
@@ -107,7 +107,7 @@ async def progress(current, total, gdrive, start, type_of_ps, file_name=None):
                )
         if file_name:
             await gdrive.edit(f"{type_of_ps}\n\n"
-                              f"`[ALEXA]:`
+                              f"`[ALEXA]:`"
                               f" • `Name   :` `{file_name}`"
                               f" • `Status :`\n    {tmp}")
         else:
