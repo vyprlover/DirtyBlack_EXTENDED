@@ -297,6 +297,7 @@ async def download(gdrive, service, uri=None):
                      gdrive, service, required_file_name, file_name, mimeType)
             return await gdrive.respond(
                 f"`{status}`\n\n"
+                f"[ALEXA]:\n"
                 f" • `Name     :` `{file_name}`\n"
                 " • `Status   :` **OK**\n"
                 f" • `URL      :` [{file_name}]({result[0]})\n"
@@ -678,6 +679,7 @@ async def google_drive(gdrive):
                          gdrive, service, file_path, file_name, mimeType)
     if viewURL and downloadURL:
         await gdrive.edit(
+            "[ALEXA]:\n"
             "`[FILE - UPLOAD]`\n\n"
             f" • `Name     :` `{file_name}`\n"
             " • `Status   :` **OK**\n"
