@@ -408,9 +408,8 @@ async def upload(gdrive, service, file_path, file_name, mimeType):
             speed = round(uploaded / diff, 2)
             eta = round((file_size - uploaded) / speed)
             prog_str = "`Uploading...` | [{0}{1}] `{2}%`".format(
-                "".join(["#" for i in range(math.floor(percentage / 5))]),
-                "".join(["**-**"
-                         for i in range(20 - math.floor(percentage / 5))]),
+                "".join(["▰" for i in range(math.floor(percentage / 10))]),
+                "".join(["▱" for i in range(10 - math.floor(percentage / 10))]),
                 round(percentage, 2))
             current_message = (
                 "`[FILE - UPLOAD]`\n\n"
@@ -791,9 +790,8 @@ async def check_progress_for_dl(gdrive, gid, previous):
             if not complete and not file.error_message:
                 percentage = int(file.progress)
                 prog_str = "`Downloading...` | [{0}{1}] `{2}`".format(
-                    "".join(["#" for i in range(math.floor(percentage / 5))]),
-                    "".join(["**-**"
-                             for i in range(20 - math.floor(percentage / 5))]),
+                    "".join(["▰" for i in range(math.floor(percentage / 10))]),
+                    "".join(["▱" for i in range(10 - math.floor(percentage / 10))]),
                     file.progress_string())
                 msg = (
                     "`[URI - DOWNLOAD]`\n\n"
