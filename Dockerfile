@@ -34,6 +34,7 @@ RUN apk add --no-cache=true --update \
     musl \
     neofetch \
     openssl-dev \
+    openssh \
     postgresql \
     postgresql-client \
     postgresql-dev \
