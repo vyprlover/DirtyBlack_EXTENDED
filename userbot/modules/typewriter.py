@@ -5,6 +5,7 @@
 from telethon import events
 import asyncio
 from userbot import CMD_HELP
+from userbot.events import register
 
 
 @register(outgoing=True, pattern="^.typ(?: |$)(.*)")
