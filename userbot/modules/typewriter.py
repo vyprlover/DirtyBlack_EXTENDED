@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# (c) Shrimadhav U K
 
 from telethon import events
 import asyncio
@@ -28,7 +25,7 @@ async def _(event):
         await event.edit(previous_text)
         await asyncio.sleep(DELAY_BETWEEN_EDITS)
 
-        CMD_HELP.update({
+CMD_HELP.update({
 "typewriter":
 "text writing animation.\
 \nUse:- .typ (text)"
