@@ -36,7 +36,7 @@ async def _(event):
           except YouBlockedUserError:
               await event.edit("**Error:** `unblock` @DeezLoadBot `and retry!`")
               
-              CMD_HELP.update({
+CMD_HELP.update({
         "spotify": 
         ".spotify (song_name) \
           \nUsage: Download songs from spotify.\n"
