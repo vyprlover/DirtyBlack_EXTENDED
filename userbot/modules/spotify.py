@@ -16,22 +16,22 @@ async def _(event):
         await event.edit("` I need a link to download something pro.`**(._.)**")
     else:
         await event.edit("🎶**Initiating Download!**🎶")
-    borg = "@DeezLoadBot"
+    bot = "@DeezLoadBot"
     
-    async with bot.conversation("borg") as conv:
+    async with userbot.conversation("bot") as conv:
           try:
               await conv.send_message("/start")
               response = await conv.get_response()
               try:
-                  await bot(ImportChatInviteRequest('AAAAAFZPuYvdW1A8mrT8Pg'))
+                  await userbot(ImportChatInviteRequest('AAAAAFZPuYvdW1A8mrT8Pg'))
               except UserAlreadyParticipantError:
                   await asyncio.sleep(0.00000069420)
               await conv.send_message(d_link)
               details = await conv.get_response()
-              await bot.send_message(event.chat_id, details)
+              await userbot.send_message(event.chat_id, details)
               await conv.get_response()
               songh = await conv.get_response()
-              await bot.send_file(event.chat_id, songh, caption="🔆**Here's the requested song!**🔆")
+              await userbot.send_file(event.chat_id, songh, caption="🔆**Here's the requested song!**🔆")
               await event.delete()
           except YouBlockedUserError:
               await event.edit("**Error:** `unblock` @DeezLoadBot `and retry!`")
