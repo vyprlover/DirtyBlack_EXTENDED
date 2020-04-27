@@ -303,7 +303,6 @@ async def download(gdrive, service, uri=None):
                 " • `Status   :` **OK**\n"
                 f" • `URL      :` [{file_name}]({result[0]})\n"
                 f" • `Download :` [{file_name}]({result[1]})",
-                f" `custom drive index :` https://elytra8.manofuranium.workers.dev/{file_name}",
                 link_preview=False
             )
         else:
