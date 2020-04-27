@@ -16,7 +16,7 @@ async def _(event):
         await event.edit("` I need a link to download something pro.`**(._.)**")
     else:
         await event.edit("🎶**Initiating Download!**🎶")
-    chat = "@DeezLoadBot"
+    bot = "@DeezLoadBot"
     
     async with bot.conversation("chat") as conv:
           try:
