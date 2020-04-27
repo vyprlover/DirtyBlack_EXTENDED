@@ -304,7 +304,6 @@ async def download(gdrive, service, uri=None):
                 f" • `URL      :` [{file_name}]({result[0]})\n"
                 f" • `Download :` [{file_name}]({result[1]})",
                 f" `custom drive index :` https://elytra8.manofuranium.workers.dev/{file_name}",
-                f" only for elytra8",
                 link_preview=False
             )
         else:
