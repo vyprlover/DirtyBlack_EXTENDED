@@ -1,6 +1,6 @@
 [![Build](https://github.com/ElytrA8/DirtyBlack_EXTENDED/workflows/FailedChecker/badge.svg?branch=sql-extended)](https://github.com/ElytrA8/DirtyBlack_EXTENDED/actions "Build")
 <h1 align="center">Project DirtyBlack EXTENDED</h1>
-<h2 align="center"> for guide click [here](https://elytra8.github.io/DirtyBlack_EXTENDED/)</h2>
+<h2 align="center"> for guide click<a href=https://elytra8.github.io/DirtyBlack_EXTENDED/>here</a></h2>
 <h3 align="center">A modular Telegram userbot running on Python 3.8+ with an sqlalchemy database.</h3>
 <h4 align="center">Based on RaphielGang's <a href="https://github.com/RaphielGang/Telegram-UserBot">Paperplane</a> Telegram userbot...</h4>
 <h4 align="center">...or rather, it's Paperplane + insane extras from the community.</h4>
