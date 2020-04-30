@@ -80,11 +80,98 @@ NOW For using UserBot It is important to know Which Vars are used for What.
 
 **LOGSPAMMER**: Set this to True in case you want the error logs to be stored in the userbot log group, instead of spitting out the file in the current chat, requires a valid BOTLOG_CHATID to be set.
 
-## HEROKU
+# HEROKU
+What is Heroku?
+Answer:-Heroku is a cloud platform as a service (PaaS) supporting several programming languages. One of the first cloud platforms, Heroku has been in development since June 2007, when it supported only the Ruby programming language, but now supports Java, Node.js, Scala, Clojure, Python, PHP, and Go.[1][2] For this reason, Heroku is said to be a polyglot platform as it has features for a developer to build, run and scale applications in a similar manner across most languages. Heroku was acquired by Salesforce.com in 2010 for $212 million.
+## Want to deploy on HEROKU
+
+Want to make account click [here](https://signup.heroku.com).
+
+if you already have or created one now click [here](https://heroku.com/deploy?template=https://github.com/ElytrA8/DirtyBlack_EXTENDED/tree/sql-extended) for deploying.
 
 ## Gdrive
+[Click here](https://da.gd/so63O)
+
+Login to your gmail.com account. It is recommended to use a gmail.com for creating the API.
+
+Select Create a Project, Accept the Terms of Service, and select your Country of Residence.
+
+Click on Agree and Continue button.
+
+Click on Get Credentials button.
+
+In the new screen, scroll down.
+
+For Which API are you using? select Google Drive API from the dropdown.
+
+For Where will you be calling the API from? select Other UI (e.g. Windows, CLI tool)
+
+For What data will you be accessing? select User data.
+
+Click on What credentials do I need?
+
+A pop-up will appear.
+
+Click on SET UP CONSENT SCREEN.
+
+A new tab will open.
+
+Give your application name, and logo that should display on the consent screen.
+
+Since this is going to be used for your personal purposes, we do not need verification. 
+
+Google allows the first 100 users to be authenticated without the verification status.
+
+Scroll Down and Click on the Save button.
+
+You can now close this tab, and return to the previous tab.
+
+Click on the Refresh button.
+
+Click on the Create OAuth Client ID button.
+
+Click on the Done button.
+
+The page will get refreshed. 
+
+Click on the Edit button.
+
+Copy the Client ID and Client secret.
+
+Add the Client ID to the G_DRIVE_CLIENT_ID key, in Heroku Environment Variable.
+
+Add the Client secret to the G_DRIVE_CLIENT_SECRET key, in Heroku Environment Variable.
+
+This plugin also requires the BOTLOG_CHATID to be set.
+
+Send a small file, in your BOTLOG_CHATID Group.
+
+Reply .gd to this file.
+
+A link will appear. 
+
+**The below six steps should be done in less than 1 minute.**
+
+Open the link in your browser, and login to the Google Drive account.
+
+All gDrive functionalities will be done on this account.
+
+This need same account that you created your API in.
+
+After login, it will display a code. 
+
+Reply this code to the in your BOTLOG_CHATID to the message from which you opened link.
+
+It will now give a txt file 
+
+Open and copy code
+
+And set it in G_DRIVE_AUTH_TOKEN_DATA IN HEROKU VAR
+
+Gdrive is now ready to use.
 
 ## Youtube
+
 
 ## Extras
 
