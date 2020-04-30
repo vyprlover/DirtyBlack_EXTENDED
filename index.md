@@ -80,6 +80,8 @@ NOW For using UserBot It is important to know Which Vars are used for What.
 
 **LOGSPAMMER**: Set this to True in case you want the error logs to be stored in the userbot log group, instead of spitting out the file in the current chat, requires a valid BOTLOG_CHATID to be set.
 
+## HEROKU
+
 ## Gdrive
 
 ## Youtube
