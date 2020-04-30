@@ -231,10 +231,10 @@ Now add it to heroku vars with YOUTUBE_API_KEY
 
 ## Extras
 
+Want to contact Owner/lead dev click [here](telegram.dog/ElytrA8)
 
+Want to join support group click [here](telegram.dog/DirtyBlack_EXTENDED)
 
-
-
-
+ot group join [here](telegram.dog/dirty_ot)
 
 
