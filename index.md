@@ -4,27 +4,10 @@ This is My [Repo](https://github.com/ElytrA8/DirtyBlack_EXTENDED/blob/sql-extend
 For using UserBot It is important to know Which Vars are used for What.
 ## VARS
 ```markdown
+**API_KEY**: get this value from [here](https://telegram.dog/UseTGXBot)
+**API_HASH**: you will get this value from where you get API_KEY
 
 
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
