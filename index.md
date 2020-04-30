@@ -8,7 +8,7 @@ NOW For using UserBot It is important to know Which Vars are used for What.
 
 **API_HASH**: you will get this value from where you get API_KEY .
 
-**STRING_SESSION**: After getting above upper values you have to go to [session generator](https://GenerateStringSession.uraniumcore.repl.run).
+**STRING_SESSION**: After getting above upper values you have to go to [session generator](https://GenerateStringSession.uraniumcore.repl.run) it will ask to select option as t/p select t and sign in with phone number in international format as +918999993456.
 
 **HEROKU_MEMEZ**: This Value Should be settled to "True" for deploying on heroku.
 
@@ -88,6 +88,10 @@ Answer:-Heroku is a cloud platform as a service (PaaS) supporting several progra
 Want to make account click [here](https://signup.heroku.com).
 
 if you already have or created one now click [here](https://heroku.com/deploy?template=https://github.com/ElytrA8/DirtyBlack_EXTENDED/tree/sql-extended) for deploying.
+
+Now fill the required values
+
+And Done your userbot should be alive now
 
 ## Gdrive
 [Click here](https://da.gd/so63O)
@@ -171,6 +175,58 @@ And set it in G_DRIVE_AUTH_TOKEN_DATA IN HEROKU VAR
 Gdrive is now ready to use.
 
 ## Youtube
+Go [here](https://console.developers.google.com/apis/dashboard)
+
+Open menu
+
+Select same project as gdrive
+
+Reopen menu
+
+In api & services
+
+Select libraries
+
+Search YouTube data
+
+Select YouTube data api
+
+Click on enable api
+
+Open menu and now goto api & services
+
+Select credentials
+
+Now from right side there is three dot button and down from it there is one more same button
+
+Click on button and Create Credentials
+
+Then choose (help me choose)
+
+Same as gdrive but select YouTube data api
+
+Where will you be calling the API from? --> select other ui eg. Windows
+
+What data will you be accessing? --> select public data 
+
+Click on What credentials do I need
+
+It will give a api key now
+
+If not goto menu api&services --> credentials 
+
+And in API Keys section 
+
+There should be one api key 
+
+Open it and copy 
+
+Now add it to heroku vars with YOUTUBE_API_KEY
+
+
+
+
+
 
 
 ## Extras
