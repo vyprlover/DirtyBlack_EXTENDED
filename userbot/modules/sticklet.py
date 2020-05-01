@@ -1,3 +1,11 @@
+# Copyright (C) 2019 The Raphielscape Company LLC.
+#
+# Licensed under the Raphielscape Public License, Version 1.d (the "License");
+# you may not use this file except in compliance with the License.
+#
+# Random RGB Sticklet by @PhycoNinja13b
+# modified by @UniBorg
+# Port From UniBorg to UserBot by MoveAngel
 
 import io
 import os
@@ -9,7 +17,8 @@ from telethon.tl.types import InputMessagesFilterDocument
 from userbot import CMD_HELP
 from userbot.events import register
 
-@register(outgoing=True, pattern="^.srgb(?: |$)(.*)")
+
+@register(outgoing=True, pattern=r"^.srgb(.*)")
 async def sticklet(event):
     R = random.randint(0,256)
     G = random.randint(0,256)
@@ -44,12 +53,12 @@ async def sticklet(event):
     draw.multiline_text(((512-width)/2,(512-height)/2), sticktext, font=font, fill=(R, G, B))
 
     image_stream = io.BytesIO()
-    image_stream.name = "@dirty.webp"
+    image_stream.name = "@UniBorg.webp"
     image.save(image_stream, "WebP")
     image_stream.seek(0)
 
     # finally, reply the sticker
-    await event.reply("https://t.me/DirtyBlack_EXTENDED", file=image_stream)
+    await event.reply("https://t.me/UniBorg/95", file=image_stream)
 
     # cleanup
     try:
@@ -72,8 +81,9 @@ async def get_font_file(client, channel_id):
     font_file_message = random.choice(font_file_message_s)
     # download and return the file path
     return await client.download_media(font_file_message)
+
 CMD_HELP.update({
-"sticklet":
-"makes text to a sticker.\
-\nUse:- .srgb (text)"
+        "sticklet":
+        ".srgb \
+            \nUsage: Enhance ur sticker"
 })
