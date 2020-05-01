@@ -136,8 +136,9 @@ async def amireallyalive(alive):
                      f"> `Python : v{python_version()} `\n"
 	                 "===================== \n"
                      f"`User : `{DEFAULTUSER} \n"
-		             "===================== \n")
-
+		             "===================== \n"
+                     f"#DirtyBlack_EXTENDED \n"
+		     "===================== \n")
 
 @register(outgoing=True, pattern="^.aliveu")
 async def amireallyaliveuser(username):
