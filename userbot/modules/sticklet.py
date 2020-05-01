@@ -5,7 +5,7 @@
 #
 # Random RGB Sticklet by @PhycoNinja13b
 # modified by @UniBorg
-# Port From UniBorg to UserBot by MoveAngel
+# Port From UniBorg to UserBot by @ElytrA8
 
 import io
 import os
