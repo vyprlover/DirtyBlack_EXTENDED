@@ -6,7 +6,6 @@ cowpy
 cffi>=1.0.0
 coffeehouse
 covid
-
 dnspython
 emoji
 gitpython
