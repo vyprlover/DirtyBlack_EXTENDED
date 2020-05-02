@@ -12,7 +12,7 @@ from userbot.events import register
 async def _(event):
     if event.fwd_from:
         return
-    await event.edit("Processing ...")
+    await event.edit("work in progress 🛰")
     PROCESS_RUN_TIME = 100
     input_str = event.pattern_match.group(1)
     selected_transfer = event.pattern_match.group(2)
