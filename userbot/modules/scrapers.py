@@ -417,7 +417,7 @@ async def imdb(e):
 
 @register(outgoing=True, pattern=r"^.trt(?: |$)([\s\S]*)")
 async def translateme(trans):
-    """ For .tr command, translate the given text using Google Translate. """
+    """ For .trt command, translate the given text using Google Translate. """
     translator = Translator()
     textx = await trans.get_reply_message()
     message = trans.pattern_match.group(1)
@@ -717,8 +717,8 @@ CMD_HELP.update({
         \nUsage: Translates text to speech for the language which is set.\nUse .lang tts <language code> to set language for tts. (Default is English.)'
 })
 CMD_HELP.update({
-    'tr':
-    '.tr <text> [or reply]\
+    'trt':
+    '.trt <text> [or reply]\
         \nUsage: Translates text to the language which is set.\nUse .lang tr <language code> to set language for trt. (Default is English)'
 })
 CMD_HELP.update({'yt': '.yt <text>\
