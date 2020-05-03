@@ -113,7 +113,7 @@ def search_torrentz_eu(search_query):
             except:
                 pass
                 return r
-                CMD_HELP.update({ "torrentz":
+CMD_HELP.update({ "torrentz":
 "`.movie` (search query) `--torrentz2.eu`|`idop.se` "
 })
     
