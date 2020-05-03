@@ -19,7 +19,7 @@ from userbot.events import register
 
 
 
-@register(outgoing=True, pattern="^.tip$")
+@register(pattern="^.tip(?: |$)(.*)")
 
 async def _(event):
 
