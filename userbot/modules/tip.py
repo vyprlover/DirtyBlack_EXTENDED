@@ -386,7 +386,7 @@ async def _(event):
         await event.edit("`\"Go for that run, no one is looking at you, don't overthink it, do it!\"`")
 
 CMD_HELP.update({
-    "tip":
-    ".tip\
-    \nGives you Pro tip\"
-    })
+"tip":
+"Gives you Pro Tip.\
+\nUse:- .tip (text)"
+})
