@@ -4,6 +4,7 @@ async_generator
 bs4
 cowpy
 cffi>=1.0.0
+cfscrape
 coffeehouse
 covid
 cryptg
