@@ -388,5 +388,5 @@ async def _(event):
 CMD_HELP.update({
     "tip":
     ".tip\
-    \nGives you Pro tip\
+    \nGives you Pro tip\"
     })
