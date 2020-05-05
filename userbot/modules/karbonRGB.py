@@ -90,26 +90,32 @@ async def carbon_api(e):
    chrome_options.add_argument("--disable-dev-shm-usage")
    chrome_options.add_argument("--no-sandbox")
    chrome_options.add_argument('--disable-gpu')
-   prefs = {'download.default_directory' : './download/'}
+   prefs = {'download.default_directory' : '/root/userbot/.bin'}
    chrome_options.add_experimental_option('prefs', prefs)
    await e.edit("⬛⬛⬜⬜⬜")
 
    driver = webdriver.Chrome(executable_path= CHROME_DRIVER, options=chrome_options)
    driver.get(url)
-   download_path = './download/'
-   driver.command_executor._commands["send_command"] = ("POST", '/session/$sessionId/chromium/send_command')
-   params = {'cmd': 'Page.setDownloadBehavior', 'params': {'behavior': 'allow', 'downloadPath': download_path}}
-   command_result = driver.execute("send_command", params)
-
-   driver.find_element_by_xpath("//button[contains(text(),'Export')]").click()
-   sleep(5) # this might take a bit.
-   driver.find_element_by_xpath("//button[contains(text(),'4x')]").click()
-   sleep(5)
-   await e.edit("⬛⬛⬛⬜⬜")
-   driver.find_element_by_xpath("//button[contains(text(),'PNG')]").click()
-   sleep(5) #Waiting for downloading
-
-   await e.edit("⬛⬛⬛⬛⬛")
+    await e.edit("`Processing..\n50%`")
+    download_path = '/root/userbot/.bin'
+    driver.command_executor._commands["send_command"] = (
+        "POST", '/session/$sessionId/chromium/send_command')
+    params = {
+        'cmd': 'Page.setDownloadBehavior',
+        'params': {
+            'behavior': 'allow',
+            'downloadPath': download_path
+        }
+    }
+    command_result = driver.execute("send_command", params)
+    driver.find_element_by_xpath("//button[contains(text(),'Export')]").click()
+   # driver.find_element_by_xpath("//button[contains(text(),'4x')]").click()
+   # driver.find_element_by_xpath("//button[contains(text(),'PNG')]").click()
+    await e.edit("`Processing..\n75%`")
+    # Waiting for downloading
+    while not os.path.isfile("/root/userbot/.bin/carbon.png"):
+        await sleep(0.5)
+    await e.edit("`Processing..\n100%`")
    file = './carbon.png'
    await e.edit("✅RGB Karbon Completed, Uploading RGB Karbon✅")
    await e.client.send_file(
