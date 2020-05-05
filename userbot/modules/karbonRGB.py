@@ -16,9 +16,11 @@ import asyncio
 import os
 import random
 
-from userbot import CMD_HELP
+from userbot import CMD_HELP, CHROME_DRIVER, GOOGLE_CHROME_BIN
+
 
 from userbot.events import register
+
 
 @register(outgoing=True, pattern="^.karbon(?: |$)(.*)")
 
