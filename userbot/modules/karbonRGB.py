@@ -120,8 +120,9 @@ async def carbon_api(e):
    os.remove('./carbon.png')
    # Removing carbon.png after uploading
    await e.delete() # Deleting msg
+
 CMD_HELP.update({
     "karbonRGB":
     ".karbon (text)\
-    \nGives you Pro Carbon\"
+    \nGives you Pro Carbon"
     })
