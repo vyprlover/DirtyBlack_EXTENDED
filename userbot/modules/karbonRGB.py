@@ -123,5 +123,5 @@ async def carbon_api(e):
 CMD_HELP.update({
     "karbonRGB":
     ".karbon (text)\
-    \nGives you Pro Carbon\
+    \nGives you Pro Carbon\"
     })
