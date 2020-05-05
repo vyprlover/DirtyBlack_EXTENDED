@@ -19,6 +19,7 @@ import random
 from userbot import CMD_HELP
 
 from userbot.events import register
+
 @register(outgoing=True, pattern="^.karbon(?: |$)(.*)")
 
 async def carbon_api(e):
@@ -82,7 +83,7 @@ async def carbon_api(e):
    url = CARBON.format(code=code, R=RED, G=GREEN, B=BLUE, T=The, lang=CARBONLANG)
    chrome_options = Options()
    chrome_options.add_argument("--headless")
-   chrome_options.binary_location = Config.GOOGLE_CHROME_BIN
+   chrome_options.binary_location = Config.CHROME_DRIVER
    chrome_options.add_argument("--window-size=1920x1080")
    chrome_options.add_argument("--disable-dev-shm-usage")
    chrome_options.add_argument("--no-sandbox")
