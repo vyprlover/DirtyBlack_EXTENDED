@@ -70,9 +70,9 @@ RUN python3 -m ensurepip \
 #
 # Clone repo and prepare working directory
 #
-RUN git clone -b sql-extended https://github.com/ElytrA8/DirtyBlack_EXTENDED /root/userbot
-RUN mkdir /root/userbot/bin/
-WORKDIR /root/userbot/
+RUN git clone -b sql-extended https://github.com/ElytrA8/DirtyBlack_EXTENDED /root/dirtyblack
+RUN mkdir /root/dirtyblack/bin/
+WORKDIR /root/dirtyblack/
 
 #
 # Copies session and config (if it exists)
