@@ -150,6 +150,8 @@ This plugin also requires the BOTLOG_CHATID to be set.
 
 Send a small file, in your BOTLOG_CHATID Group.
 
+[This process should be done after deploying]
+
 Reply .gd to this file.
 
 A link will appear. 
