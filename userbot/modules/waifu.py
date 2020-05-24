@@ -55,4 +55,4 @@ CMD_HELP.update({
         ".waifu \
           \nUsage: Enchance your text with beautiful anime girl templates. \
           \n@StickerizerBot"
-    })
+     })
