@@ -73,8 +73,7 @@ RUN apk add --no-cache=true --update \
     brotli \
     lz4 \
     gawk \
-    libmpack \
-    openjdk11-jre-11.0.7_p10-r1
+    libmpack
 RUN python3 -m ensurepip \
     && pip3 install --upgrade pip setuptools \
     && pip3 install wheel \
