@@ -56,9 +56,25 @@ RUN apk add --no-cache=true --update \
     zip \
     megatools \
     nodejs \
-    freetype-dev
-
-
+    freetype-dev \
+    unace \
+    unrar \
+    zip \
+    unzip \
+    p7zip \
+    sharutils \
+    uudeview \
+    arj \
+    cabextract \
+    file-roller \
+    dtc \
+    xz \
+    python-pip \
+    brotli \
+    lz4 \
+    gawk \
+    libmpack \
+    openjdk11-jre-11.0.7_p10-r1
 RUN python3 -m ensurepip \
     && pip3 install --upgrade pip setuptools \
     && pip3 install wheel \
@@ -66,7 +82,7 @@ RUN python3 -m ensurepip \
     if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi && \
     if [[ ! -e /usr/bin/python ]]; then ln -sf /usr/bin/python3 /usr/bin/python; fi && \
     rm -r /root/.cache
-
+RUN pip install backports.lzma protobuf pycrypto
 #
 # Clone repo and prepare working directory
 #
